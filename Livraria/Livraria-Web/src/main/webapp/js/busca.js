@@ -22,6 +22,11 @@ function buscarProduto(titulo){
 			}
 					
 		}
+		for(var v=0; v< produtos[i].filmes.length; v++){
+			if(produtos[i].filmes[v]==nome){
+				window.alert("temos"+ titulo.value+"em nosso estoque de filmes")
+			}
+		}
 		for(var v=0;v<produtos[i].musicas.length;v++){
 			if(produtos[i].musicas[v]==nome){
 				window.alert("Temos "+titulo.value+"em nosso estoque de músicas");
@@ -35,5 +40,17 @@ function buscarProduto(titulo){
 	else if(nome=="LIVROS"||nome=="LIVRO"){
 			window.alert("Encontramos alguns produtos nessa categoria LIVRO:"+produtos[0].livros);
 	}
-	
+	else if(nome=="FILMES"|| nome=="FILME"){
+		window.alert("Encontramos alguns produtos na categoria FILMES:"+produtos[0].livros);
+	}
+	else if(nome=="MUSICA"||nome=="MUSICA"){
+		window.alert("Encontramos alguns produtos nessa categoria MUSICAS:"+produtos[0].musicas);
+	}
+	else if(nome=="GAMES"||nome=="JOGOS"){
+		window.alert("Encontramos alguns produtos nessa categoria GAMES:"+produtos[0].games);
+    }
+	else if(enc==0){
+			window.alert("Produto não encontrado ! ");
+		
+	}
 }
