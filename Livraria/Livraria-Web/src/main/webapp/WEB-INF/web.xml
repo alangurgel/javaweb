@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
   <display-name>Livraria-Web</display-name>
+   <servlet>
+    <servlet-name>ManterCliente</servlet-name>
+    <servlet-class>threeway.projeto.servlets.ManterCliente</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManterCliente</servlet-name>
+    <url-pattern>/ManterCliente</url-pattern>
+  </servlet-mapping>
+  <display-name>Livraria-web</display-name>
   <welcome-file-list>
-    <welcome-file>inicio.html</welcome-file>
-    </welcome-file-list>
+  	<welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>
